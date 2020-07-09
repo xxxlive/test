@@ -117,6 +117,7 @@ public class Main
         {
             System.out.println("添加信息失败！10秒后即将关闭程序");
             Thread.sleep(10000);
+            Thread.sleep(10000);
             System.exit(-1);
         }
         boolean running = true;
