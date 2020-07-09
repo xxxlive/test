@@ -18,6 +18,7 @@ public class Company
 
     private Company()
     {
+    	  System.out.println("该id已经存在");
         employeeMap = new TreeMap<>();
         runningDateInfoMap = new TreeMap<>();
         endDateInfoMap = new TreeMap<>();
@@ -25,6 +26,7 @@ public class Company
 
     public static Company getInstance()
     {
+    	  System.out.println("该id已经存在");
         return company;
     }
 
@@ -47,6 +49,7 @@ public class Company
     {
         if (employeeMap.containsKey(id))
         {
+        	  System.out.println("该id已经存在");
             showEmployee(employeeMap.get(id));
             return true;
         }
